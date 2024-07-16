@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#div_fields {
+    margin-right: 20px;
+}
+
+.fields-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.checkbox-group label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.checkbox-column {
+    flex: 1;
+    min-width: 100px;
+}
+
+#div_filter {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-group {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+#div_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.top-tables {
+    width: 23%;
+}
+
+.tables {
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#div_table_container,
+#div_paper_table_container {
+    width: 100%;
+}
+
+.scrollable-table {
+    overflow-y: auto;
+    max-height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.scrollable-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f1f1f1;
+    z-index: 1;
+}
+
+#plot-container {
+    width: 100%;
+    height: auto;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+table th, table td {
+    font-size: 0.9em;
+}
+
+table th {
+    font-weight: bold;
+    text-align: center;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    text-align: left;
+}
+
+table td:nth-child(1) {
+    width: calc(1.5 * 200px);  /* 이전 너비의 1.5배 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table td:nth-child(6) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+.label {
+    font-size: 1.3em;
+}
+
+.content {
+    font-size: 1.1em;
+}

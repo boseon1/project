@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#div_fields {
+    margin-right: 20px;
+}
+
+.fields-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;  /* 레이블을 가운데 정렬 */
+}
+
+/* 체크박스와 텍스트 레이블을 같은 줄에 배치 */
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    margin-right: 5px; /* 열 간격을 더 좁게 설정 */
+}
+
+.checkbox-group label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* 체크박스 그룹 스타일 */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* 여러 줄로 배치될 수 있도록 설정 */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px; /* 박스의 너비를 늘림 */
+}
+
+/* 체크박스 열의 스타일 */
+.checkbox-column {
+    flex: 1;
+    min-width: 100px; /* 각 열의 최소 너비 설정 */
+}
+
+#div_filter {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-group {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+#div_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;  /* 요소들 사이의 간격을 20px로 설정 */
+}
+
+.top-tables {
+    width: 23%;
+}
+
+#div_table_container {
+    width: 80%;
+}
+
+.scrollable-table {
+    overflow-y: auto;
+    max-height: 400px;
+    position: relative;
+    margin-right: 20px;  /* 오른쪽에 20px 마진 추가 */
+}
+
+.scrollable-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f1f1f1;
+    z-index: 1;
+}
+
+#plot-container {
+    width: 100%;
+    height: auto;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+    width: 33%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table th, table td {
+    font-size: 0.9em;
+}
+
+/* 테이블 헤더를 굵은 글씨와 중간 정렬 */
+table th {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* applicant 컬럼의 문자열을 한 줄로 표시 */
+table td:nth-child(6) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;  /* 최대 너비 설정 */
+}
+
+/* 추가: 전체 테이블 셀에 적용 */
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+.label {
+    font-size: 1.3em;
+}
+
+.content {
+    font-size: 1.1em;
+}
